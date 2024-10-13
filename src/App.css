@@ -1,0 +1,9 @@
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* تحسين حركة الشرائح */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* إضافة خلفية شبه شفافة للنص */
+    border-radius: 5px; /* زوايا دائرية للنص */
+  }
+  
