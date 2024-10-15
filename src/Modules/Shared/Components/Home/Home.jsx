@@ -76,7 +76,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
@@ -150,7 +150,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
@@ -223,7 +223,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
@@ -296,7 +296,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
@@ -369,7 +369,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
@@ -442,7 +442,7 @@ export default function CardComponent() {
                 </TableRow>
               </TableBody>
             </Table>
-            <Typography variant="h5" sx={{ textAlign: 'right', color: "purple", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ textAlign: 'right', color: "dark", marginTop: 2, fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>
               3,600,800 جنيه
             </Typography>
           </CardContent>
