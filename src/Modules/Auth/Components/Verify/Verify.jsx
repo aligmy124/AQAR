@@ -7,7 +7,7 @@ import axios from 'axios';
 import { USERS_URL } from '../../../../Api/Api';
 import { Link } from 'react-router-dom';
 
-export default function ForgetPassword() {
+export default function Verify() {
   const {
     register,
     handleSubmit,
@@ -17,11 +17,11 @@ export default function ForgetPassword() {
   // Submit handler
   const submit = async (data) => {
     try {
-      const res = await axios.post(USERS_URL.forgetPassword, data);
-      toast.success("Password reset email sent successfully");
+      const res = await axios.post(USERS_URL.verfiy, data);
+      toast.success("verfiy successfully");
     } catch (error) {
       console.error(error);
-      toast.error("Failed to send password reset email");
+      toast.error("Failed verfiy email");
     }
   };
 
@@ -31,7 +31,7 @@ export default function ForgetPassword() {
         <div className="col-12 col-lg-11 col-xl-10">
           <div className="card-body p-3 p-md-4 p-xl-5">
             <div className="text-center mb-4">
-              <h4 className="text-start">Forget Password</h4>
+              <h4 className="text-start">Verify</h4>
             </div>
             <form onSubmit={handleSubmit(submit)}>
               <div className="row gy-3">
@@ -57,8 +57,25 @@ export default function ForgetPassword() {
                   </div>
                 </div>
                 <div className="col-12">
+                  <div className="form-floating mb-3">
+                    <input
+                      type="text"
+                      className={`form-control ${errors.email ? "is-invalid" : ""}`}
+                      {...register("otp", {
+                        required: "otp is required",
+                      })}
+                      id="otp"
+                      placeholder="otp"
+                    />
+                    <label htmlFor="otp" className="form-label">otp</label>
+                    {errors.email && (
+                      <div className="invalid-feedback">{errors.email.message}</div>
+                    )}
+                  </div>
+                </div>
+                <div className="col-12">
                   <div className="d-grid">
-                    <button className="btn btn-dark btn-lg" type="submit">Reset Password</button>
+                    <button className="btn btn-dark btn-lg" type="submit">verify Account</button>
                   </div>
                 </div>
               </div>

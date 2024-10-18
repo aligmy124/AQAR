@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css"
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import { ToastContainer } from "react-toastify";
 import NotFound from "./Modules/Shared/Components/NotFound/NotFound";
 import Home from "./Modules/Shared/Components/Home/Home";
@@ -11,6 +12,7 @@ import AuthLayout from "./Modules/Shared/Components/AuthLayout/AuthLayout";
 import Register from "./Modules/Auth/Components/Register/Register";
 import ForgetPassword from "./Modules/Auth/Components/ForgetPassword/ForgetPassword";
 import ChangePassword from "./Modules/Auth/Components/ChangePassword/ChangePasowrd";
+import Verify from "./Modules/Auth/Components/Verify/Verify";
 function App() {
   const routes = createBrowserRouter([
     {
@@ -32,14 +34,18 @@ function App() {
         {path:"register",element:<Register/>},
         {path:"forget-password",element:<ForgetPassword/>},
         {path:"change-password",element:<ChangePassword/>},
+        // {path:"reset-password",element:<ResetPassword/>},
+        {path:"verfiy",element:<Verify/>},
       ],
     },
   ]);
 
   return (
     <>
+      <GoogleOAuthProvider clientId="1073694185818-sslphelpovolu9v4mdq8osuer8b3h653.apps.googleusercontent.com">
       <ToastContainer />
       <RouterProvider router={routes} />
+    </GoogleOAuthProvider>
     </>
   );
   }
