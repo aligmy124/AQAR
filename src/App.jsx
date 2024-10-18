@@ -13,21 +13,29 @@ import Register from "./Modules/Auth/Components/Register/Register";
 import ForgetPassword from "./Modules/Auth/Components/ForgetPassword/ForgetPassword";
 import ChangePassword from "./Modules/Auth/Components/ChangePassword/ChangePasowrd";
 import Verify from "./Modules/Auth/Components/Verify/Verify";
+import PartmentData from "./Modules/Shared/Components/Partment/PartmentData";
+import LandData from "./Modules/Shared/Components/Land/LandData";
+import BuildingData from "./Modules/Shared/Components/Building/BuildingData";
+import ProfilePage from "./Modules/Shared/Components/ProfilePage/ProfilePage";
 function App() {
   const routes = createBrowserRouter([
     {
       path: "/",
-      element:<MasterLayout/>,
+      element: <MasterLayout />,
       errorElement: <NotFound />,
       children: [
-        {index:true,element:<Home/>},
-        {path:"card",element:<CardFormat/>},
-        {path:"showdata",element:<ShowAqar/>},
+        { index: true, element: <Home /> },
+        { path: "card", element: <CardFormat /> },
+        { path: "showdata", element: <ShowAqar /> },
+        { path: "PartmentData", element: <PartmentData /> },
+        { path: "LandData", element: <LandData /> },
+        { path: "BuildingData", element: <BuildingData /> },
+        { path: "/advertiser/profile", element: <ProfilePage /> },
       ],
     },
     {
       path: "/auth",
-      element:<AuthLayout/>,
+      element: <AuthLayout />,
       errorElement: <NotFound />,
       children: [
         {path:"login",element:<Login/>},

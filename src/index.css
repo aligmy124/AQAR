@@ -19,3 +19,47 @@ body {
 .text-main {
   color: var(--primary-color);
 }
+.search_bar {
+  width: 80%;
+  margin: auto;
+  direction: rtl;
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+}
+.profile_page {
+  width: 85%;
+  margin: auto;
+  text-align: right;
+  direction: rtl;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.card {
+  width: 20rem;
+}
+.fav {
+  position: absolute;
+  padding: 10px;
+  top: 15px;
+  left: 10px;
+  color: #ffffffd5;
+  font-size: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+.buy {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  background: rgb(86, 208, 86);
+  padding: 8px 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+}

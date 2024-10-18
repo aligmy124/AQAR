@@ -18,15 +18,13 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
 const pages = [
-  { name: 'اضافة شقة', link: '/products' },
-  { name: 'اضافة ارض', link: '/pricing' },
-  { name: 'اضافة مبني سكنس', link: '/blog' }
+  { name: 'اضافة شقة', link: '/PartmentData' },
+  { name: 'اضافة ارض', link: '/LandData' },
+  { name: 'اضافة مبني سكنى', link: '/BuildingData' }
 ];
 
 const settings = [
-  { name: 'Profile', link: '/profile' },
-  { name: 'Account', link: '/account' },
-  { name: 'Dashboard', link: '/dashboard' },
+  { name: 'Profile', link: '/advertiser/profile' },
   { name: 'Logout', link: '/logout' }
 ];
 
@@ -47,7 +45,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ direction: 'rtl', backgroundColor: "white", color: "#000" , boxShadow:"none" , position:"fixed" , top:"0" , right:"0" , zIndex:"1000" }}>
+    <AppBar position="static" sx={{ direction: 'rtl', backgroundColor: "red", color: "#000" , boxShadow:"none" , position:"fixed" , top:"0" , right:"0" , zIndex:"1000" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
