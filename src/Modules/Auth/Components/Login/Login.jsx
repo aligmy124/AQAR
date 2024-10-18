@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useForm } from "react-hook-form";
 import img from "../../../../assets/img/image.jpg";
 import AuthComponent from "../../../Usable/Component/AuthComponent/AuthComponent";
@@ -19,8 +19,10 @@ export default function Login() {
     try {
       const res = await axios.post(USERS_URL.login, data);
       toast.success("Sign in Successfully");
+      console.log(res)
     } catch (error) {
       toast.error("Sign in Failed. Please check your credentials and try again.");
+      console.log(error)
     }
   };
 
@@ -29,8 +31,10 @@ export default function Login() {
     try {
       const res = await axios.post(USERS_URL.login, { token });
       toast.success("Sign in Successfully");
+      console.log(res)
     } catch (error) {
       toast.error("Sign in Failed. Please try again.");
+      console.log(error)
     }
   };
 
@@ -64,7 +68,7 @@ export default function Login() {
                     <input
                       type="email"
                       className={`form-control ${errors.email ? "is-invalid" : ""}`}
-                      {...register("email", {
+                      {...register("login", {
                         required: "Email is required",
                         pattern: {
                           value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -77,9 +81,9 @@ export default function Login() {
                     <label htmlFor="email" className="form-label">
                       Email
                     </label>
-                    {errors.email && (
+                    {errors.login && (
                       <div className="invalid-feedback">
-                        {errors.email.message}
+                        {errors.login.message}
                       </div>
                     )}
                   </div>
